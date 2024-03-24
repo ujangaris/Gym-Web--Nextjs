@@ -58,3 +58,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
     noted:
         - 80vh pada hero karna nanti pada bagian header akan mengambil sekitar 20vh = 100vh
+
+### components about, blog, brands, classes, memberships, team & testimonial
+
+    todo:
+    1. components/About.tsx
+    2. components/Blog.tsx
+    3. components/Brands.tsx
+    4. components/Classes.tsx
+    5. components/Memberships.tsx
+    6. components/Team.tsx
+    7. components/Testimonial.tsx
+    8. app/pages.tsx
+        - import dan about, blog, brands, classes, memberships, team & testimonial
+        import dan pasang hero
+
+    noted:
+        - 25vh pada Brands sesuai kebutuhan karna akan ada image dari brand saja
+        - 50vh pada Testimonial sesuai kebutuhan saja
+

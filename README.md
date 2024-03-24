@@ -34,3 +34,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Pakage install:
+
+    npm i framer-motion react-countup react-scroll @types/react-scroll react-icons react-responsive swiper
+
+### setup project
+
+    1. layout.tsx
+    2. tailwind.config.tsx
+    3. global.css
+
+### components header, hero & footer
+
+    todo:
+    1. components/header.tsx
+    2. components/hero.tsx
+    3. components/footer.tsx
+    4. app/layout.tsx
+        - import dan pasang header & footer
+    5. app/pages.tsx
+        import dan pasang hero
+
+    noted:
+        - 80vh pada hero karna nanti pada bagian header akan mengambil sekitar 20vh = 100vh

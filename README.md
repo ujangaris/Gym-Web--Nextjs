@@ -111,3 +111,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - perhatikan pada navbar klik setiap menu
          akan ada action yang menuju pada bagian dari menu yang di klik
+
+### membuat menu menjadi aktif
+
+    todo:
+    1. components/Nav.tsx
+        - pasang activeClass="active"
+    2. global.css
+        - pasang :
+                .active {
+                    @apply text-accent;
+                    }
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - perhatikan pada navbar klik setiap menu
+          menu aktif jia berada pada section yang sama dengan menu
+    note: class active pada component Nav dan global css harus sama

@@ -77,3 +77,37 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - 25vh pada Brands sesuai kebutuhan karna akan ada image dari brand saja
         - 50vh pada Testimonial sesuai kebutuhan saja
 
+### memasang components Nav
+
+    todo:
+    1. components/Nav.tsx
+        - rafc
+        - pasang parameter containerStyles dengan property containerStyles:string
+            ini agar ketika compoent nav ini digunakan dapat menyertakan className pada parrentnya
+        - target untuk dipasangkan dengan id pada setiap component
+        - pasang Link dari react-scroll
+        - buat array of object untuk nama2 pada navbar
+        - untuk menampilkan isi dari array loping dengan map
+    2. components/Header.tsx
+        - import dan pasang Nav kemudian styling
+        - styling heder agar bg putih dan position fix dll
+    3. components/About.tsx
+        pasang id"about"
+    4. components/Blog.tsx
+        pasang id"blog"
+    5. components/Brands.tsx
+        pasang id"contact"
+    6. components/Classes.tsx
+        pasang id"class"
+    7. components/Hero.tsx
+        pasang id"hero"
+    8. components/Memberships.tsx
+        pasang id"prices"
+    9. components/Team.tsx
+        pasang id"team"
+    10. components/Testimonial.tsx
+        pasang id"testimonial"
+    11. pengujian pada browser:
+        - http://localhost:3000/
+        - perhatikan pada navbar klik setiap menu
+         akan ada action yang menuju pada bagian dari menu yang di klik

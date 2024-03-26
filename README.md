@@ -127,3 +127,25 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - perhatikan pada navbar klik setiap menu
           menu aktif jia berada pada section yang sama dengan menu
     note: class active pada component Nav dan global css harus sama
+
+### Navbar logo, divice mobile & device xl
+
+    todo:
+    1. components/Header.tsx
+        - pasang logo
+            - Link from "next/link";
+            - Image from "next/image";
+        - pasang mobile nav - hidden on large device
+        - pasang desktop nav - hidden on small device
+        - import dan pasang MobileNav.tsx
+    2. components/MobileNav.tsx
+        - rafc
+        - pasang paramet dan properti containerStyles
+        - pada classNamenya panggil parameter containerStyles
+    3.  tailwind.config.ts
+        perbaikan code yang typo
+    4.  pengujian pada broser:
+        - http://localhost:3000/
+        - akan ada logo
+        - perhatikan pada navbar, menu akan menghilang pada device mobile
+        - pada layar xl menu mobile akan menghilang digantikan dengan navbar menu

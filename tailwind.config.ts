@@ -28,7 +28,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        orimary: {
+        primary: {
           DEFAULT: "#333",
           100: "#484848",
           200: "#151515",

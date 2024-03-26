@@ -149,3 +149,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - akan ada logo
         - perhatikan pada navbar, menu akan menghilang pada device mobile
         - pada layar xl menu mobile akan menghilang digantikan dengan navbar menu
+
+### headerActive
+
+    todo:
+    1. components/Header.tsx
+        - pasang hooks headerActive & setHeaderActive - useState
+        - pasang useEffect yang memuat function handleScroll
+            - detect scroll > 50 px
+            - add scroll event
+            - clear scroll event
+        - ketika pada posisi home/tidak aktive
+            - tinggi nav menu 100px
+        - ketika pada posisi di scroll mencapai atau melebihi 50px
+            - tinggi nav menu 124px
+        - pasang class headerActive
+        - tambahkan beberapa styling
+    2.  pengujian pada broser:
+        - http://localhost:3000/
+        - ketika di scroll nav akan berubah ukuran dan  terlihat mengambang karna pengarush z- index 50

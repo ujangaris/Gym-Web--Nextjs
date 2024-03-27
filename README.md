@@ -200,3 +200,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - pada device mobile akan ada tampilan menu , klik icon burger bar
           jika di klik akan tampil menu pada device mobile
           jika di klik lagi icon nya akan hilang menunya.
+
+### menu login dan resgister
+
+    todo:
+    1. components/Header.tsx
+        - login & register
+        - styling menu  login dan register
+        - rapihkan code agar upercase semua
+    2.  pengujian pada broser:
+        - http://localhost:3000/
+        - akan ada menu login dan register di smua ukuran layar

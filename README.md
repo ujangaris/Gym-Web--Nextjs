@@ -180,3 +180,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     3.  pengujian pada broser:
         - http://localhost:3000/
         - pada device mobile akan ada tampilan menu yang sama dengan dekstop dan xl
+
+### onClick menu mobile
+
+    todo:
+    1. components/Header.tsx
+        - pasang hook openNav & setOpenNav
+        - hiden/open menu button
+            - pada button pasang onClick()
+        - pasang mdMenu dari react-icon
+    2. components/MobileNav.tsx
+        - pasang useMediaQuery dengan query : max-width:640px
+          dan tampung kedalam variable isMobile
+        - pada activeClass pasang logic untuk isMobile, jika pada ukuran mobile/
+          ukuran nya terpenuhi maka menu aktif di tiadakan,
+          jika pada device dekstop dan xl aktif
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada device mobile akan ada tampilan menu , klik icon burger bar
+          jika di klik akan tampil menu pada device mobile
+          jika di klik lagi icon nya akan hilang menunya.

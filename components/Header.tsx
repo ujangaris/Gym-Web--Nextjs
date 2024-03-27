@@ -37,7 +37,11 @@ export const Header = () => {
           />
         </Link>
         {/* mobile nav - hidden on large device */}
-        <MobileNav containerStyles="text-white xl:hidden" />
+        <MobileNav
+          containerStyles={`${
+            headerActive ? "top-[90px]" : "top-[124px]"
+          }  flex flex-col text-white text-center gap-8 fixed bg-primary-200 w-full left-0  text-base uppercase font-medium xl:hidden transition-all`}
+        />
         {/* desktop nav - hidden on small device */}
         <Nav containerStyles=" flex gap-4 text-white hidden xl:flex" />
       </div>

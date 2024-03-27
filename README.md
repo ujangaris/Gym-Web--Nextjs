@@ -168,3 +168,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada broser:
         - http://localhost:3000/
         - ketika di scroll nav akan berubah ukuran dan  terlihat mengambang karna pengarush z- index 50
+
+### menu mobile
+
+    todo:
+    1. components/MobileNav.tsx
+        - duplikasi code dari Nav untuk array object dan kebutuhan menu lainnya
+    2. components/Header.tsx
+        - pada MobileNav tambahkan class headerActive untuk merapihkan menu ketika di scroll
+        - styling menu mobile
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada device mobile akan ada tampilan menu yang sama dengan dekstop dan xl

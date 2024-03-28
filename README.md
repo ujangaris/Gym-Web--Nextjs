@@ -211,3 +211,31 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada broser:
         - http://localhost:3000/
         - akan ada menu login dan register di smua ukuran layar
+
+### styling hero section
+
+    todo:
+    1. components/Hero.tsx
+        - pasang bg hero yang sudah disiapkan
+        - styling hero
+        - import dan pasang HeroSlider dan bungkus kedalam className container, mx-auto
+    2. components/HeroSlider.tsx
+        - rafc
+        - pasang "use client";
+        - import dan pasang swiper react component
+        - import swiper style
+        - import dan pasang component CustomButton
+            - parameter yang terdapat di CustomButton di gunakan
+                - text untuk isi tulisan
+                - containerStyles untuk styling nya
+    3. components/CustomButton.tsx
+        - rafc
+        - pasang parameter text,containerStyles,
+        - pasang property text,containerStyles,
+        - pasang button yang didalamnya kita panggil containerStyles dengan className
+        - pasang 2 buah span
+            - span pertama untuk animation button ketika dihover
+            - span kedua untuk warna text ketika dihover
+    4.  pengujian pada broser:
+        - http://localhost:3000/
+        - tampil hero dengan bg dan text serta button

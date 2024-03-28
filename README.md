@@ -239,3 +239,28 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     4.  pengujian pada broser:
         - http://localhost:3000/
         - tampil hero dengan bg dan text serta button
+
+### swiperNavButton
+
+    todo:
+    1. components/SwiperNavButtons.tsx
+        - rafc
+        - pasang "use client";
+        - pasang parameter btnStyles,btnStyles dan containerStyles
+        - pasang property btnStyles,btnStyles dan containerStyles
+        - pada div pasang containerStyles pada className
+        - buat 2 buah button yang membungkus masing2 1 icon dari react-icon
+            - pasang btnStyles pada button
+            - pasang iconStyles pada icon
+    2. components/HeroSlider.tsx
+        - import dan pasang SwiperNavButtons
+        - pada Swiper tambahkan className h-full
+        - styling SwiperNavButtons
+            - containerStyles
+            - btnStyles
+            - iconStyles
+    3. components/Hero.tsx
+        -tambahkan class h-full
+    4.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada bagian hero akan ada icon right dan left

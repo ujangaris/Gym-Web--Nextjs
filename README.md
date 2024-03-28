@@ -264,3 +264,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     4.  pengujian pada broser:
         - http://localhost:3000/
         - pada bagian hero akan ada icon right dan left
+
+### action swiperNavButton
+
+    todo:
+    1. components/SwiperNavButtons.tsx
+        - import dan pasang useSwiper
+        - pasang onClick yang didalamnya terdapat swiper.slidePrev dan pada button pertama
+        - pasang onClick yang didalamnya terdapat swiper.slideNext dan pada button kedua
+        react-icon
+            - pasang btnStyles pada button
+            - pasang iconStyles pada icon
+    2. components/HeroSlider.tsx
+        - duplicate code SwiperSlide (hanya untuk text apakah slide berfungsi)
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada bagian hero akan ada icon right dan left, coba  klik
+          jika setup yang kita lakukan berhasil content slide akan bergeser

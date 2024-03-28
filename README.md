@@ -281,3 +281,35 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - pada bagian hero akan ada icon right dan left, coba  klik
           jika setup yang kita lakukan berhasil content slide akan bergeser
+
+### pasang animation dengan framer-motion
+
+    todo:
+    1. lib/variants.tsx
+        - rafc
+        - pasang parameter direction dan delay yang di isi dengan string
+        - terdapat 2 bagian yakni hidden dan show
+                - y
+                - opacity
+                - x
+                - transition
+                    - type
+                    - duration
+                    - delay
+                    - ease
+    2. components/HeroSlider.tsx
+        - docs: https://www.framer.com/motion/scroll-animations/
+        - import daan pasang motion dari framer-motion
+        - import fadeIn dari /lib/variants
+        - pada h1,p dan div tambahakan awalan dengan motion.
+          kemudian didalamnya kita pasang properti2 dari framer motion:
+            - variants={fadeIn('up', 0.4)}
+            - initial="hidden"
+            - whileInView={'show'}
+            - viewport={{once:false, amount:0.2}}
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada bagian hero akan ada animasi ketika halaman pertama kali dibuka/setelah di scroll
+        - klik juga prev dan next icon , animasi pun akan terjadi
+    4.  noted: gunakan docs dari framer-motion untuk animasi2 keren lainnya
+        https://www.framer.com/motion/scroll-animations/

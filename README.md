@@ -441,3 +441,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada broser:
         - http://localhost:3000/
         - ketika section classes di scroll/di refresh akan ada animation
+
+### image team section
+
+    todo:
+    1.  components/Team.tsx
+        - pasang use client
+        - buat data trainerData sebanyak 4 data yang isinya
+            - image
+            - name
+            - role
+            - description
+            - social
+        - trainers grid ( ini agar responsive image)
+        - looping trainerData menggunakan map
+        - import dan pasang icon dari react-icon
+        - import dan pasang Image dari "next/image";
+          pada image tambahkan fill agar tidak error
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - akan ada image responsive pada section team

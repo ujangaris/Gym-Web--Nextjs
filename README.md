@@ -360,3 +360,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - pada section about akan ada 4 linkaran yang berisikan angka
           yang ketika di reload dan scroll angkanya akan bertambah
           dari 0 - nilai dari number yang sudah ditentukan
+
+### styling responsive about achivement
+
+    todo:
+    1.  components/Achivements.tsx
+        - menampilkan dan styling bagian text
+        - stiling bagian icon agar responsive di semua layar
+    2.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada section about aachivement akan terlihat lebih responsive
+        - buka pada ukuran layar xl, large, medium dan small akan responsive

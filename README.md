@@ -313,3 +313,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - klik juga prev dan next icon , animasi pun akan terjadi
     4.  noted: gunakan docs dari framer-motion untuk animasi2 keren lainnya
         https://www.framer.com/motion/scroll-animations/
+
+### about section
+
+    todo:
+    1. components/About.tsx
+        - import dan pasang icon FaUsers dari react-icon
+        - import dan pasang icon IoIosPricetag dari react-icon
+        - import dan pasang icon FaDumbbell dari react-icon
+        - buat 3 buah array of object yang ditampung kedalam variable featured
+        - buat styling head untuk about
+        - buat styling featured items
+            - variable featured diatas kita loping dengan map
+            - panggil icon2 dari react-icon yang sudah kita siapkan diatas
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada section about akan berisikan content about
+    

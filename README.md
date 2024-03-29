@@ -416,3 +416,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada broser:
         - http://localhost:3000/
         - pada section classes akan ada 4 image yang responsive
+
+### classes component text & button
+
+    todo:
+    1.  components/Classes.tsx
+        - text & btn
+            - panggil loop text
+            - panggil loop description
+        - import dan panggil CustomButton
+    2.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada section classes akan ada 4 text dan button

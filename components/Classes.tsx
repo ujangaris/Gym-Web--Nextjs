@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { CustomButton } from "./CustomButton";
 
 const classes = [
   {
@@ -42,6 +43,15 @@ export const Classes = () => {
               {/* overlay */}
               <div className="bg-black/50 absolute w-full h-full top-0 z-10"></div>
               <Image src={item.img} fill className="object-cover" alt="" />
+              {/* text & btn */}
+              <div className="z-30 max-w-[380px] text-center flex flex-col justify-center items-center gap-4">
+                <h3 className="h3 text-accent">{item.name}</h3>
+                <p className="text-white">{item.description}</p>
+                <CustomButton
+                  containerStyles="w-[164px] h-[46px]"
+                  text="Read more"
+                />
+              </div>
             </div>
           );
         })}

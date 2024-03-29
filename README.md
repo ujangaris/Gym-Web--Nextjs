@@ -371,3 +371,31 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - pada section about aachivement akan terlihat lebih responsive
         - buka pada ukuran layar xl, large, medium dan small akan responsive
+
+### pasang animation dari framer-motion
+
+    todo:
+    1.  components/Achivements.tsx
+        - animation
+            - buat object statsContainerVariant
+            - buat object statsItem
+        - import dan  pasang motion dari framer-motion
+            - variants={statsContainerVariant}
+            - initial="hidden"
+            - whileInView={"show"}
+            - viewport={{ once: false, amount: 0.3 }}
+        - pada div pengkus inner count number pasang
+            - motion
+            - variants={statsItem}
+        - stiling bagian icon agar responsive di semua layar
+    2.  components/About.tsx
+        - import dan pasang motion dari framer-motion
+            - variants={fadeIn("up", 0.4)} // nilai disesuikan
+            - initial="hidden"
+            - whileInView={"show"}
+            - viewport={{ once: false, amount: 0.3 }}
+        - import dan pasang fadIn dari lib/variants
+        - pasang motion sesuia kebutuhan
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - ketika section about di scroll/ di refresh animation akan bekerja

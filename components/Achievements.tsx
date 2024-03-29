@@ -1,6 +1,6 @@
 "use client";
 
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import CountUp from "react-countup";
 import { FaBriefcase, FaClock, FaTrophy } from "react-icons/fa";
@@ -28,16 +28,48 @@ const stats = [
     text: "international awards",
   },
 ];
+
+// animation
+const statsContainerVariant = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4,
+      duration: 0.5,
+      ease: "linear",
+    },
+  },
+};
+
+const statsItem = {
+  hidden: { y: 20, opacity: 0 },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.6, 0.3, 0.8],
+    },
+  },
+};
 export const Achievements = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
     <section>
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
+        <motion.div
+          variants={statsContainerVariant}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-16"
+        >
           {stats.map((item, index) => {
             return (
-              <div
+              <motion.div
+                variants={statsItem}
                 className="flex flex-col justify-center items-center"
                 key={index}
               >
@@ -58,10 +90,10 @@ export const Achievements = () => {
                   <item.icon className="text-3xl mb-2" />
                   <h4 className="h4">{item.text}</h4>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

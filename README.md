@@ -399,3 +399,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     3.  pengujian pada broser:
         - http://localhost:3000/
         - ketika section about di scroll/ di refresh animation akan bekerja
+
+### classes component
+
+    todo:
+    1.  components/Classes.tsx
+        - pasang use client
+        - pasang array object classes yang berisi:
+            - name
+            - img
+            - description
+        - looping classes dengan map
+        - import dan pasang Image dari "next/image"
+        - pasang overlay agar terlihat lebih gelap
+        - gunakan grid untuk tampilan responsive
+    2.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada section classes akan ada 4 image yang responsive

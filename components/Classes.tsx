@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { CustomButton } from "./CustomButton";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
 
 const classes = [
   {
@@ -33,7 +35,13 @@ const classes = [
 export const Classes = () => {
   return (
     <section className="" id="class">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <motion.div
+        variants={fadeIn("up", 0.6)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="grid grid-cols-1 lg:grid-cols-2"
+      >
         {classes.map((item, index) => {
           return (
             <div
@@ -45,17 +53,40 @@ export const Classes = () => {
               <Image src={item.img} fill className="object-cover" alt="" />
               {/* text & btn */}
               <div className="z-30 max-w-[380px] text-center flex flex-col justify-center items-center gap-4">
-                <h3 className="h3 text-accent">{item.name}</h3>
-                <p className="text-white">{item.description}</p>
-                <CustomButton
-                  containerStyles="w-[164px] h-[46px]"
-                  text="Read more"
-                />
+                <motion.h3
+                  variants={fadeIn("up", 0.4)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className="h3 text-accent"
+                >
+                  {item.name}
+                </motion.h3>
+                <motion.p
+                  variants={fadeIn("up", 0.6)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className="text-white"
+                >
+                  {item.description}
+                </motion.p>
+                <motion.div
+                  variants={fadeIn("up", 0.8)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.2 }}
+                >
+                  <CustomButton
+                    containerStyles="w-[164px] h-[46px]"
+                    text="Read more"
+                  />
+                </motion.div>
               </div>
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };

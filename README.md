@@ -428,3 +428,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada broser:
         - http://localhost:3000/
         - pada section classes akan ada 4 text dan button
+
+### pasang animation clasess
+
+    todo:
+    1.  components/Classes.tsx
+        - import dan pasang motion dari "framer-motion";
+            - variants={fadeIn("up", 0.6)}
+            - initial="hidden"
+            - whileInView={"show"}
+            - viewport={{ once: false, amount: 0.2 }}
+    2.  pengujian pada broser:
+        - http://localhost:3000/
+        - ketika section classes di scroll/di refresh akan ada animation

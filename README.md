@@ -329,4 +329,34 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     3.  pengujian pada broser:
         - http://localhost:3000/
         - pada section about akan berisikan content about
-    
+
+### about achivement
+
+    todo:
+    1.  components/Achivements.tsx
+        - rafc
+        - pasang use client
+        - buat array of object dengan 4 data, dengn  masing2 berisikan:
+            - number
+            - icon
+            - text
+          tampung kedalam variable stats
+        - bungkus semua cotent didalam class container mx-auto
+        - styling achivement agar menampilkan lingkaran yang ditengahnya berisikan dari number
+        - forloop data stats menggunakan map
+        - import dan pasang CountUp dari react-counup
+            digunakan untuk menambah angka sampai batas yang telah di tentukan pada numer
+        - import dan pasang useRef() dari react
+            ini akan digunakan bersamaan dengan framer-motion
+        - import dan pasang useInView dari framer-motion
+            ini digunakan bersamaan dengan useRef
+        noted: useInView dan useRef digunakan untuk membuat animation otomatis
+               ketika halaman di reload dan di scroll perhatikan nilai saat di scroll
+               akan berubah dari 0 - nilai dari number yang sudah ditentukan
+    2.  components/About.tsx
+        - import dan pasang Achivement
+    3.  pengujian pada broser:
+        - http://localhost:3000/
+        - pada section about akan ada 4 linkaran yang berisikan angka
+          yang ketika di reload dan scroll angkanya akan bertambah
+          dari 0 - nilai dari number yang sudah ditentukan

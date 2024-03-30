@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 import { CustomButton } from "./CustomButton";
+import { fadeIn } from "@/lib/variants";
+import { motion } from "framer-motion";
 
 const trainerData = [
   {
@@ -60,9 +62,23 @@ export const Team = () => {
   return (
     <section className="py-12 xl:h-[110vh]" id="team">
       <div className="container mx-auto h-full flex flex-col items-center justify-center">
-        <h2 className="h2 text-center mb-6">Our Trainers</h2>
+        <motion.h2
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h2 text-center mb-6"
+        >
+          Our Trainers
+        </motion.h2>
         {/* trainers grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12">
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12"
+        >
           {trainerData.map((trainer, index) => {
             return (
               <div
@@ -101,14 +117,20 @@ export const Team = () => {
               </div>
             );
           })}
-        </div>
+        </motion.div>
         {/* btn */}
-        <div className="">
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className=""
+        >
           <CustomButton
             containerStyles="w-[196px] h-[62px]"
             text="See all trainers"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -477,3 +477,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - section team akan terlihat lebih menarik dengan tulisan , icon dan button
+
+### pasang animation pada team section
+
+    todo:
+    1.  components/Team.tsx
+        - import dan pasang motion dari framer-motion
+            - variants={fadeIn("up", 0.4)}
+            - initial="hidden"
+            - whileInView={"show"}
+            - viewport={{ once: false, amount: 0.2 }}
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - section team akan terlihat lebih menarik dengan animation ketika di scrolling/refresh

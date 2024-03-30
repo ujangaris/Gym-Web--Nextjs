@@ -573,3 +573,24 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - section testimonial akan terlihat lebih menarik dengan adanya animation
+
+### styling blog section
+
+    todo:
+    1.  components/Blog.tsx
+        - pasang use client
+        - blog data
+        - import dan pasang Swiper react components
+        - import dan pasang SwiperSlide react components
+        - looping blogData dengan map
+            - pasang SwiperSlide
+                - import dan pasang Image dari image/next
+                - import dan pasang Link dari image/next
+                - tampilkan date , href dan title
+        - buat tampilan responsive
+            - pada Swiper pasang slidesPerView,spaceBetween &breakpoints
+              nah pada breakpoint ini kita buat tampilannya responsive
+        -import dan pasang CustomButton
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - section blog akan tampil

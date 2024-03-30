@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { CustomButton } from "./CustomButton";
 import { SwiperNavButtons } from "./SwiperNavButtons";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
 
 // blog data
 const blogData = [
@@ -63,8 +65,21 @@ export const Blog = () => {
   return (
     <section className="bg-primary-300 text-white py-24" id="blog">
       <div className="container mx-auto">
-        <h2 className="h2 text-center mb-8">Blog</h2>
-        <div className="">
+        <motion.h2
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h2 text-center mb-8"
+        >
+          Blog
+        </motion.h2>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -114,13 +129,18 @@ export const Blog = () => {
               iconStyles="text-2xl"
             />
           </Swiper>
-        </div>
-        <div className="">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.8)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <CustomButton
             containerStyles="block w-[196px] h-[62px] mx-auto"
             text="View All"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

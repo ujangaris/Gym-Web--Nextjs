@@ -606,3 +606,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - pada section blog akan tampil icon preview dan next preview
         - jika di klik content akan men-swipe
+
+### pasang animation blog section
+
+    todo:
+    1.  components/Blog.tsx
+        - import dan pasang motion dari framer-motion
+            - variants={fadeIn("up", 0.4)}
+            - initial="hidden"
+            - whileInView={"show"}
+            - viewport={{ once: false, amount: 0.2 }}
+        - pasang motion sesuai kebutuhan
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section blog tanpilan akan lebih terlihat menarik dengan animation

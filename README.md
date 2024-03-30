@@ -490,3 +490,28 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - section team akan terlihat lebih menarik dengan animation ketika di scrolling/refresh
+
+### styling membership section
+
+    todo:
+    1.  components/MembershipSlider.tsx
+        - rafc
+        - use client
+        - pasang swiper styles
+        - buat dan pasang membership data
+            - looping membershipData dengan map
+            - import dan pasang swiper component
+        - import dan pasang icon dari react-icon/
+        - styling benefit
+            looping data benefit dengan map
+            - pasang icon
+        - styling price & button
+            - import dan pasang component buttons
+    Noted: Docs : https://swiperjs.com/react
+                - https://swiperjs.com/swiper-api#param-breakpoints
+    2.  components/Membership.tsx
+        - bungkus content dengan class container dan mx-auto
+            - import dan pasang MembershipSlider
+    3.  pengujian pada browser
+        - http://localhost:3000/
+        - section membership akan tampil

@@ -529,3 +529,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - section membership akan tampil dengan animation
+
+### swiper pagination styles(tanda titik bagian bawah saat di swipe)
+
+    todo:
+    1.  app/global.css
+        - swiper pagination styles
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - ketika pada ukuran medum dan small akan ada tanda pagination
+          bentuknya titik 2-3 buah

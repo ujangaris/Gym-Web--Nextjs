@@ -539,3 +539,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - ketika pada ukuran medum dan small akan ada tanda pagination
           bentuknya titik 2-3 buah
+
+### styling testimonial section
+
+    todo:
+    1.  components/Testimonial.tsx
+        - buat testimonial data
+        - import dan pasang Swiper dari swiper-react
+            - swiper styles
+            - import require modules pagination
+            - tetukan ukuran dan responsive tampilan pada device
+              pada breackpoints terdapat slidePreview artinya berapa yang mau ditampilkan
+        - import dan pasang SwiperSlide dari swiper-react
+        - loop data testimonial dengan map
+            - styling image
+            - import dan pasang icon FaQuoteLeft dari react icon
+        - bungkus semua kontent testimonial kedalam class container mx-auto
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - section testimonial akan tampil dan dapat di swipe kanan dan kiri
+        - terdapat bentuknya titik 3-6 buah

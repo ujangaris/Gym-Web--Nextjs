@@ -594,3 +594,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - section blog akan tampil
+
+### SwiperNavButtons blog section
+
+    todo:
+    1.  components/Blog.tsx
+        - import dan pasang SwiperNavButtons
+        - styling SwiperNavButtons
+            - panggil parameter containerStyles, btnStyles & iconStyles
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section blog akan tampil icon preview dan next preview
+        - jika di klik content akan men-swipe

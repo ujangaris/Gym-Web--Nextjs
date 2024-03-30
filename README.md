@@ -461,3 +461,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - akan ada image responsive pada section team
+
+### text, icon & button team section
+
+    todo:
+    1.  components/Team.tsx
+        - styling name
+        - styling role
+        - styling description
+        - styling social
+            -lakukan looping pada social agar dpt menampilkan icon satu per satu
+            - import dan pasang Link dari "next/link";
+        - styling btn
+            - import dan pasang CustomButton
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - section team akan terlihat lebih menarik dengan tulisan , icon dan button

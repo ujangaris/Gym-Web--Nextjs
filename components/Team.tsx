@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { CustomButton } from "./CustomButton";
 
 const trainerData = [
   {
@@ -63,14 +65,49 @@ export const Team = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12">
           {trainerData.map((trainer, index) => {
             return (
-              <div className="" key={index}>
+              <div
+                className="flex flex-col items-center text-center"
+                key={index}
+              >
                 {/* image */}
                 <div className="relative w-[320px] h-[360px] mx-auto mb-4">
                   <Image src={trainer.image} alt="" fill />
                 </div>
+                {/* name */}
+                <h4 className="h4 mb-2">{trainer.name}</h4>
+                {/* role */}
+                <p className="uppercase text-xs tracking-[3px] mb-2">
+                  {trainer.role}
+                </p>
+                {/* description */}
+                <p className="mb-6 max-w-[320px] mx-auto">
+                  {trainer.description}
+                </p>
+                {/* social */}
+                <div className="flex gap-12 justify-center">
+                  {trainer.social.map((social, index) => {
+                    return (
+                      <div className="" key={index}>
+                        <Link
+                          href={social.href}
+                          className="hover:text-accent transition-all"
+                        >
+                          <social.icon className="text-lg" />
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             );
           })}
+        </div>
+        {/* btn */}
+        <div className="">
+          <CustomButton
+            containerStyles="w-[196px] h-[62px]"
+            text="See all trainers"
+          />
         </div>
       </div>
     </section>

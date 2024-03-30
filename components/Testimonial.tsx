@@ -9,6 +9,8 @@ import { Pagination } from "swiper/modules";
 // swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
 // testimonial data
 const testimonialData = [
   {
@@ -53,8 +55,21 @@ export const Testimonial = () => {
   return (
     <section className="py-12 xl:py-28" id="testimonial">
       <div className="container mx-auto">
-        <h2 className="h2 text-center">Our Testimonials</h2>
-        <div>
+        <motion.h2
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h2 text-center"
+        >
+          Our Testimonials
+        </motion.h2>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -97,7 +112,7 @@ export const Testimonial = () => {
               );
             })}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

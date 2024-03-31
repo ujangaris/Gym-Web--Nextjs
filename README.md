@@ -704,3 +704,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - pada section footer akan terlihat content info,blog, gallery, newsletter
+
+### styling section footer | copyright
+
+    todo:
+    1.  components/Footer.tsx
+        - styling copyright
+        - bungkus content kedalam class container & mx-auto
+        - bagi 2 bagian dengan justify-between
+            - copyright
+            - icon
+        - import dan pasang icon dari react-icon
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section footer akan ada bagian copyright dipaling bawah footer

@@ -2,7 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaYoutube,
+} from "react-icons/fa";
 import { CustomButton } from "./CustomButton";
 
 export const Footer = () => {
@@ -159,6 +166,40 @@ export const Footer = () => {
                 <CustomButton containerStyles="h-[50px] px-8" text="Send" />
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* copyright */}
+      <div className="text-white border-t border-white/20 py-12">
+        <div className="container mx-auto h-full">
+          <div className="flex justify-between items-center h-full">
+            <span className="">&copy; Copyright 2024 Ujang Arisandi</span>
+            <ul className="flex gap-4 text-xl">
+              <li>
+                <Link
+                  href="#"
+                  className="text-white hover:text-accent transition-all"
+                >
+                  <FaFacebook />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-white hover:text-accent transition-all"
+                >
+                  <FaInstagram />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-white hover:text-accent transition-all"
+                >
+                  <FaYoutube />
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

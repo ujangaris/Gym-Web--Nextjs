@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const brandImages = [
   {
@@ -25,14 +26,46 @@ const brandImages = [
     href: "",
   },
 ];
+
+// variants
+const brandContainerVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4,
+      duration: 0.5,
+      ease: "linear",
+    },
+  },
+};
+// item
+const brandItem = {
+  hidden: { y: 20, opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.6, 0.3, 0.8],
+    },
+  },
+};
 export const Brands = () => {
   return (
     <section className="py-8" id="contact">
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 lg:grid-cols-5 py-8">
+        <motion.div
+          variants={brandContainerVariant}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="grid grid-cols-2 lg:grid-cols-5 py-8"
+        >
           {brandImages.map((img, index) => {
             return (
-              <div className="" key={index}>
+              <motion.div variants={brandItem} className="" key={index}>
                 <Link className="group" href={img.href}>
                   <Image
                     className="opacity-50 group-hover:opacity-100 transition-all mx-auto"
@@ -42,10 +75,10 @@ export const Brands = () => {
                     alt=""
                   />
                 </Link>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

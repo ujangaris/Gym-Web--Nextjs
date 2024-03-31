@@ -637,3 +637,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - akan tampil 5 gambar pada section brand dan tentunya responsive di semua devices
+
+### pasang animation pada section brand
+
+    todo:
+    1.  components/Brand.tsx
+        - pasang variants
+        - pasang item
+        - import dan pasang motion dari "framer-motion";
+        - gunakan motion sesuai kebutuhan
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section brand akan terlihat lebih menarik dengan adanya animation

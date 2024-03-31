@@ -680,3 +680,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - pada section footer akan terlihat content info,blog
           yang lain masih berupa tulisan dan backgound saja
+
+### styling section footer | gallery
+
+    todo:
+    1.  components/Footer.tsx
+        - hapus bg-pink
+        - styling gallery footer
+        - tampilkan 7 image dan buat responsive
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section footer akan terlihat content info,blog, gallery
+          yang lain masih berupa tulisan dan backgound saja

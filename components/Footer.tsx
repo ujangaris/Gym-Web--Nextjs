@@ -78,7 +78,69 @@ export const Footer = () => {
             </div>
           </div>
           {/* gallery */}
-          <div className="bg-pink-300/10">gallery</div>
+          <div className="">
+            <h4 className="h4 text-accent mb-4">
+              {/* gallery img */}
+              <div className="flex flex-wrap gap-2">
+                <Link href="#">
+                  <Image
+                    src={"/assets/img/trainers/david.jpg"}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src={"/assets/img/trainers/matt.jpg"}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src={"/assets/img/trainers/rosy.jpg"}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src={"/assets/img/trainers/sofia.jpg"}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src={"/assets/img/trainers/rosy.jpg"}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src={"/assets/img/trainers/david.jpg"}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src={"/assets/img/trainers/matt.jpg"}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+              </div>
+            </h4>
+          </div>
           {/* newsletter */}
           <div className="bg-pink-300/10">newsleter</div>
         </div>

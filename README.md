@@ -718,3 +718,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - pada section footer akan ada bagian copyright dipaling bawah footer
+
+### pasang animation pada section footer
+
+    todo:
+    1.  components/Footer.tsx
+        - import dan pasang motion dari 'framer-motion'
+        - copy data object array dary brand kemudian modifikasi
+            - footerContainerVariant
+            - footerItem
+        - gunakan motion sesuai kebutuhan
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section footer akan terlihat lebih menarik dengan adanya animation

@@ -11,14 +11,46 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { CustomButton } from "./CustomButton";
+import { motion } from "framer-motion";
 
+// variants
+const footerContainerVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4,
+      duration: 0.5,
+      ease: "linear",
+    },
+  },
+};
+// item
+const footerItem = {
+  hidden: { y: 20, opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.6, 0.3, 0.8],
+    },
+  },
+};
 export const Footer = () => {
   return (
     <footer className="bg-primary-300 pt-24">
-      <div className="container mx-auto pb-24">
+      <motion.div
+        variants={footerContainerVariant}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="container mx-auto pb-24"
+      >
         <div className="text-white grid grid-cols-1 xl:grid-cols-4 gap-x-8 gap-y-12">
           {/* info */}
-          <div className="flex flex-col gap-4">
+          <motion.div variants={footerItem} className="flex flex-col gap-4">
             <Link href="#">
               <Image
                 src={"/assets/img/logo.png"}
@@ -47,9 +79,9 @@ export const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
           {/* blog */}
-          <div className="">
+          <motion.div variants={footerItem} className="">
             <h4 className="h4 text-accent mb-4">Recent blog post</h4>
             {/* post */}
             <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
@@ -84,9 +116,9 @@ export const Footer = () => {
                 </p>
               </Link>
             </div>
-          </div>
+          </motion.div>
           {/* gallery */}
-          <div className="">
+          <motion.div variants={footerItem} className="">
             <h4 className="h4 text-accent mb-4">
               {/* gallery img */}
               <div className="flex flex-wrap gap-2">
@@ -148,9 +180,9 @@ export const Footer = () => {
                 </Link>
               </div>
             </h4>
-          </div>
+          </motion.div>
           {/* newsletter */}
-          <div className="">
+          <motion.div variants={footerItem} className="">
             <h4 className="h4 text-accent mb-4">Newsletter</h4>
             <div className="flex flex-col gap-4">
               <p>
@@ -166,9 +198,9 @@ export const Footer = () => {
                 <CustomButton containerStyles="h-[50px] px-8" text="Send" />
               </form>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
       {/* copyright */}
       <div className="text-white border-t border-white/20 py-12">
         <div className="container mx-auto h-full">

@@ -649,3 +649,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - pada section brand akan terlihat lebih menarik dengan adanya animation
+
+### styling section footer | info
+
+    todo:
+    1.  components/Footer.tsx
+        - pasang 'use client'
+        - bungkus content kedalam class container & mx-auto
+        - buat tampilan responsive dengan class grid & cols
+        - buat 4 class dengan bg-pink
+          - di isi dengan info, blog, gallery & newsletter
+        - pda info bg kita hapus dan mulai styling
+            - import dan pasang Image dari "next/image"
+            - import dan pasang Link dari "next/link"
+            - pasang ul yang berisikan 3 li yang didalamnya terdapat icon
+                - import dan pasang 4 icon dari react-icon
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section footer akan terlihat content info,
+          yang lain masih berupa tulisan dan backgound saja

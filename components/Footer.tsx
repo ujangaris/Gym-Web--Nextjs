@@ -41,7 +41,42 @@ export const Footer = () => {
             </ul>
           </div>
           {/* blog */}
-          <div className="bg-pink-300/10">blog</div>
+          <div className="">
+            <h4 className="h4 text-accent mb-4">Recent blog post</h4>
+            {/* post */}
+            <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
+              <Link href="#" className="hover:text-accent transition-all">
+                <h5 className="h5 leading-snug">
+                  How to stay motivated for all excercises
+                </h5>
+                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">
+                  September 22, 2024
+                </p>
+              </Link>
+            </div>
+            {/* post 2 */}
+            <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
+              <Link href="#" className="hover:text-accent transition-all">
+                <h5 className="h5 leading-snug">
+                  How to stay motivated for all excercises
+                </h5>
+                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">
+                  September 22, 2024
+                </p>
+              </Link>
+            </div>
+            {/* post 3*/}
+            <div className="flex flex-col gap-3 pb-3 mb-4">
+              <Link href="#" className="hover:text-accent transition-all">
+                <h5 className="h5 leading-snug">
+                  How to stay motivated for all excercises
+                </h5>
+                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">
+                  September 22, 2024
+                </p>
+              </Link>
+            </div>
+          </div>
           {/* gallery */}
           <div className="bg-pink-300/10">gallery</div>
           {/* newsletter */}

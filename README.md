@@ -668,3 +668,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - pada section footer akan terlihat content info,
           yang lain masih berupa tulisan dan backgound saja
+
+### styling section footer | blog
+
+    todo:
+    1.  components/Footer.tsx
+        - hapus bg-pink
+        - styling blog footer
+        - tampilkan 3 post dengan ada 2 border sebagai pembatas
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section footer akan terlihat content info,blog
+          yang lain masih berupa tulisan dan backgound saja

@@ -211,3 +211,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada broser:
         - http://localhost:3000/
         - akan ada menu login dan register di smua ukuran layar
+
+### gunakan branch latihan untuk belajar
+
+    todo:
+    1. git branch latihan

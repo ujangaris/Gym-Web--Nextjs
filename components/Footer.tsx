@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { CustomButton } from "./CustomButton";
 
 export const Footer = () => {
   return (
@@ -142,7 +143,23 @@ export const Footer = () => {
             </h4>
           </div>
           {/* newsletter */}
-          <div className="bg-pink-300/10">newsleter</div>
+          <div className="">
+            <h4 className="h4 text-accent mb-4">Newsletter</h4>
+            <div className="flex flex-col gap-4">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae, ab.
+              </p>
+              <form className="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Your email address"
+                  className="h-[50px] outline-none px-4 text-primary-300"
+                />
+                <CustomButton containerStyles="h-[50px] px-8" text="Send" />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

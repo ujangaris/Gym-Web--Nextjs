@@ -692,3 +692,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         - http://localhost:3000/
         - pada section footer akan terlihat content info,blog, gallery
           yang lain masih berupa tulisan dan backgound saja
+
+### styling section footer | newsletter
+
+    todo:
+    1.  components/Footer.tsx
+        - hapus bg-pink
+        - styling newsletter footer
+        - tampilkan form input dan buttom
+            - import dan pasang CustomButton
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - pada section footer akan terlihat content info,blog, gallery, newsletter

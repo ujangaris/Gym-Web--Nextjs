@@ -620,3 +620,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     2.  pengujian pada browser
         - http://localhost:3000/
         - pada section blog tanpilan akan lebih terlihat menarik dengan animation
+
+### styling section brand
+
+    todo:
+    1.  components/Brand.tsx
+        - pasang 'use client'
+        - pasang data brandImages
+            - src untuk isi imagenya
+            - href
+        - bungkus content kedalam class container dan mx-auto
+        - gunakan grid untuk responsive devices
+        - looping data brandImage dengan map
+        - import dan pasang Image dari "next/link";
+        - import dan pasang Link dari "next/link";
+    2.  pengujian pada browser
+        - http://localhost:3000/
+        - akan tampil 5 gambar pada section brand dan tentunya responsive di semua devices
